@@ -50,11 +50,24 @@ public class TelegramBot extends TelegramLongPollingBot {
             switch (message.getText()) {
                 case "/start":
                     sendMsg(message, "Привет, я подскажу тебе место где ты найдешь нужное тебе блюдо!");
+                    sendMsg(message, "Для начала работы выбери на клавиатуре внизу экрана свой город");
                     break;
                 case "Минск":
                     sendMsg(message, "Теперь введи название блюда");
                     break;
-                case "Брест", "Витебск", "Гродно", "Гомель", "Могилев":
+                case "Брест":
+                    sendMsg(message, "В этом городе мы появимся совсем скоро:)");
+                    break;
+                case "Витебск":
+                    sendMsg(message, "В этом городе мы появимся совсем скоро:)");
+                    break;
+                case "Гродно":
+                    sendMsg(message, "В этом городе мы появимся совсем скоро:)");
+                    break;
+                case "Гомель":
+                    sendMsg(message, "В этом городе мы появимся совсем скоро:)");
+                    break;
+                case "Могилев":
                     sendMsg(message, "В этом городе мы появимся совсем скоро:)");
                     break;
                 case "Помощь":
